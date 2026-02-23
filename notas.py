@@ -15,6 +15,28 @@ una vez terminan podran subir sus cambios al servidor es decir a su carpeta prin
 si uno subio los cambios antes que el otro partiendo de la misma copia base, al segundo no lo dejara subir sus cambios sin antes descargar la última versión.
 así se evitan los errores que pueden suceder con el trabajo colaborativo.'''
 
+### Ramas
+
+"""
+- **main | master**. rama de producción.
+cualquier cambio que vaya aca son cambios que ya estan probados funcionan y no tienen errores
+
+- **develop | sandox | trunk**, rama de desarrollo
+todo lo que hacemos es de manera local, todo lo que se aprueba de manera local, pero en algun momento tendremos que probalo
+entonces para poder probalo tenemos que homologar los cambios.
+esta rama entonces siemrpe debe estar homologado con lo que tiene main|master
+
+"""
+
+### Git flow
+
+""""
+- nuevos requerimientos
+    - faature/modificar_modulo_ventas
+- solucionar errores
+    - bugfix/*
+"""
+
 ### Comandos GIT
 '''
 1. **git init**, empezar un proyecto de git (localmente).
@@ -71,5 +93,20 @@ esto nos puede pasar en algun momento.
 
 8. **git pull**, traer todos los cambios de una rama remota a una rama local.
 
-hola mundo!
+9. **git branch**, listar todas las ramas creadas (sumando las locales como remotas)
+
+10. **git branch <nombre_rama>**, creamos una rama que contenga el nombre mencionado entre <>.
+
+como le agregamos una regla ya no podemos hacer ningun cambio directo a la rama main
+entonces estoy obligado a crear una nueva rama rtomando como base main
+para eso debo estar en la rama que debo tomar como base
+si queiro crear una rama desde main debo de estar en main primnero:
+
+git branch feature/cambio_en_readme
+
+ahora debemos irnos a la rama creada:
+
+11. **git checkout**, podemos posicionarnos en cualqueir rama como también podemos omitir cambios de un archivo.
+
+git checkout featyre/cambio_en_readme
 '''
