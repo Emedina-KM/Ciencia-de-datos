@@ -108,5 +108,7 @@ ahora debemos irnos a la rama creada:
 
 11. **git checkout**, podemos posicionarnos en cualqueir rama como también podemos omitir cambios de un archivo.
 
-git checkout featyre/cambio_en_readme
+git checkout feature/cambio_en_readme
+
+hola mundo
 '''
