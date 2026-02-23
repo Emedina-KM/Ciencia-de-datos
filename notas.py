@@ -110,5 +110,5 @@ ahora debemos irnos a la rama creada:
 
 git checkout featyre/cambio_en_readme
 
-hola mundo
+hola mundo!
 '''
